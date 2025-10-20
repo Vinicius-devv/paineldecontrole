@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Indie+Flower&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/painel.css">
+    <link rel="stylesheet" href="../css/ids.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/celular.css">
+    <link rel="stylesheet" href="../css/modais.css">
+
+    <title>Painel de controle</title>
+</head>
+
+<body>
+
+
+    <div class="ajuda">
+        Ajuda
+    </div>
+    <div class="nav-panel" id="search">
+
+        <div class="search-nav">
+
+            <label for="search-painel">
+                <i class="bi bi-search"></i>
+            </label>
+
+            <input type="search" name="" id="search-painel" placeholder="Procure algo...">
+
+        </div>
+
+
+    </div>
+
+    <header>
+
+        <!--Dashboard-->
+        <div class="dashboard" id="dashboard">
+
+            <div class="nav-dash">
+
+                <div class="title-dash">
+
+                    <h3>Dashboard</h3>
+
+                    <span style="color: gray;">Veja seus marcus</span>
+
+                </div>
+
+                <div class="btn-dash-nav">
+
+                    <button onclick="calc()">Relatar problema</button>
+                    <button id="new-prod-dash" onclick="newprod()">Novo produto</button>
+
+                </div>
+            </div>
+
+            <div class="cards-dash">
+
+                <div class="card-dash" id="employees">
+
+                    <div class="title-dash-card">
+
+                        <span>Funcionários</span>
+
+                        <i class="bi bi-person-badge"></i>
+
+                    </div>
+
+
+                    <span id="saldo">
+                        <b>0</b>
+                    </span>
+                </div>
+                <div class="card-dash" id="customers">
+
+                    <div class="title-dash-card">
+
+                        <span>clientes</span>
+
+                        <i class="bi bi-people"></i>
+
+                    </div>
+
+
+                    <span id="saldo">
+                        <b>0</b>
+                    </span>
+                </div>
+                <div class="card-dash" id="sales">
+
+                    <div class="title-dash-card">
+
+                        <span>Vendas</span>
+
+                        <i class="bi bi-wallet2"></i>
+
+                    </div>
+
+
+                    <span id="buied">
+                        <b>0</b>
+                    </span>
+                </div>
+                <div class="card-dash" id="total-sales">
+
+                    <div class="title-dash-card">
+
+                        <span>Ganhos totais</span>
+
+                        <i class="bi bi-currency-dollar"></i>
+
+                    </div>
+
+
+                    <span id="saldo">
+                        <b>R$0,00</b>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="data-users">
+
+                <ul>
+                    <li><i class="bi bi-envelope"></i> email@email.com</li>
+                    <li><i class="bi bi-telephone"></i>(99)99999-9999</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Produtos-->
+        <div class="prods" id="prods">
+
+            <h2>Seus produtos</h2>
+
+            <div class="cards">
+
+
+                <div class="card">
+                    <img src="../img/d.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../img/undraw_deep-thinker-avatar_6xg6.svg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="../img/foto.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--Painel lateral esquerdo-->
+    <aside class="esquerda">
+
+        <div class="barra-lateral">
+
+            <div class="profile-adm">
+
+                <img src="../img/foto.jpg" alt="Sem foto">
+
+                <div class="ifos-adm">
+                    <span class="amdname">Adm Name</span>
+                    <span id="emailadm">aaabbbccc</span>
+                </div>
+            </div>
+            <div class="painelcontrol">
+
+
+                <ul class="tabs">
+
+                    <a href="#dashboard" id="left-bar">
+                        <li id="dashboard"><i class="bi bi-pie-chart"></i>Dashboard</li>
+                    </a>
+
+                    <a href="#prods" id="left-bar">
+                        <li id="produtos">
+                            <i class="bi bi-box-seam"></i>Produtos
+                        </li>
+                    </a>
+
+                    <li onclick="loja()"><i class="bi bi-bag-heart"></i>Loja</li>
+
+                    <li><i class="bi bi-envelope"></i>Mensagens</li>
+                    <li id="Cadastro"><i class="bi bi-person-add"></i>Cadastro</li>
+
+                    <li id="Clientes"><i class="bi bi-people"></i>Clientes</li>
+
+
+                    <li id="Cog" onclick="cog()"><i class="bi bi-gear"></i>Preferências</li>
+
+                    <li id=""><i class="bi bi-info-lg"></i>ajuda</li>
+
+                    <li id="fechar"><i class="las la-window-close"></i>Fechar</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="btn-out" id="btn-out">
+
+            <button id="logout" onclick="login()"><i class="bi bi-box-arrow-left"></i>Sair</button>
+
+        </div>
+
+    </aside>
+
+    <div class="mobile-menu">
+    </div>
+
+    <!--Modais-->
+
+    <div class="new-prod" id="new-prod">
+        <div class="modal-prod">
+
+            <form action="">
+
+                <input type="text" placeholder="Nome do produto">
+                <input type="text" placeholder="Descrição do produto">
+                <input type="text" placeholder="Preço do produto">
+                <input type="file" name="" id="">
+
+                <button id="submit">Salvar e sair</button>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="modal-edit" id="modal-edit">
+
+        <form action="" class="editar-modal">
+
+            <input type="file" name="" id="">
+
+            <input type="text" name="" id="calc1" placeholder="Nome do produto" maxlength="30px">
+
+            <input type="text" name="" id="calc2" placeholder="Descrição do produto">
+
+            <input type="number" name="" id="" placeholder="Preço do produto">
+
+            <button id="edit-save" onclick="">Salvar e sair</button>
+
+        </form>
+
+    </div>
+
+    <!--Preferencias-->
+    <div class="cog" id="cog">
+
+        <form action="" class="panel-cog" id="panel-cog">
+
+            <h1>Loja</h1>
+
+            <input type="file">
+
+            <div class="infos-cog-user">
+
+                <input type="text" placeholder="Seu nome Ex.: Antônio">
+                <input type="text" placeholder="Nome da sua empresa">
+                <input type="text" placeholder="Seu número Ex.: (DDD) + 90000-0000">
+
+            </div>
+
+            <textarea name="" id="desc-loja"
+                placeholder="Esta é minha loja virtual com grande variedade de produtos de extrema qualidade e preços acessíveis que cabem no seu bolso!"></textarea>
+
+            <h1 style="margin-top: 10px;">Preferêcias</h1>
+
+            <div class="checkbox">
+
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="1">Permitir que usuários cadastrem produtos</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="1" value="" checked>
+                    </div>
+
+                </div>
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="">Permitir que usuários cadastrem usuários</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="" value="" checked>
+                    </div>
+
+                </div>
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="">Permitir que usuários cadastrem clientes</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="" value="" checked>
+                    </div>
+
+                </div>
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="">Permitir que vejam mensagens</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="" value="">
+                    </div>
+
+                </div>
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="">Permitir que usuários excluam produtos</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="" value="">
+                    </div>
+
+                </div>
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="">Permitir que usuários excluam usuários</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="" value="">
+                    </div>
+
+                </div>
+                <div class="content-check">
+
+                    <div class="title-check">
+                        <label for="">Permitir que usuários excluam clientes</label>
+                    </div>
+
+                    <div class="input-check">
+                        <input type="checkbox" name="" id="" value="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" id="edit-save" value="Salvar e sair">
+
+
+        </form>
+    </div>
+</body>
+
+<script>
+
+    function calc() {
+
+        
+        nota = prompt(parseFloat("Nos diga seu problema").value)
+
+        if(nota == null){
+            alert("Nada a dizer? Ok")
+        }else{
+            alert("Vamos vizualizar seu contato")
+            console.log(nota)
+        }
+    }
+</script>
+
+<script src="../javascript/modais.js"></script>
+<script src="../javascript/login.js"></script>
+<script src="../javascript/links.js"></script>
+<script src="../javascript/abas.js"></script>
+
+</html>

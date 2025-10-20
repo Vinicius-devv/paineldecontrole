@@ -1,0 +1,67 @@
+*{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    transition: .1s;
+}
+html{
+    scroll-behavior: smooth;
+}
+input{
+    padding: 5px;
+}
+#submit{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #0866FF;
+    color: white;
+}
+#submit:hover{
+    background-color: #0057e4;
+}
+#edit-save{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #0866FF;
+    color: white;
+}
+#edit-save:hover{
+    background-color: #0057e4;
+}
+#login-button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #0866FF;
+    color: white;
+}
+#login-button:hover{
+    background-color: #0057e4;
+}
+
+button{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #c9c9c9;
+}
+li{
+    list-style: none;
+}
+i{
+    cursor: pointer;
+}

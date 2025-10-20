@@ -1,0 +1,178 @@
+body{
+        font-family: "Rubik", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+    img {
+        width: 2%;
+        object-fit: cover;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.search-nav-store {
+    background-color: #F3F3F5;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 5px;
+
+    &:hover {
+        background-color: whitesmoke;
+    }
+
+}
+
+.search-nav-store i {
+    color: #b1b1b1;
+    margin: 10px;
+
+}
+
+.search-nav-store input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 400px;
+}
+
+.icons-user-store i {
+    margin: 0px 5px;
+
+    &:hover {
+        color: #ccc;
+    }
+}
+
+.produtos {
+    margin: 80px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 10px 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 70%;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+}
+
+.card button {
+    align-items: center;
+}
+
+.textbox {
+    margin: 10px 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.buy-button {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+    &:hover {
+        background-color: whitesmoke;
+    }
+
+    i {
+        margin: 0px 5px;
+    }
+
+}
+
+
+header {
+    margin: 0px 20rem;
+}
+
+.sobrenos {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0866FF;
+    color: white;
+    padding: 20px;
+    font: bold;
+}
+
+.textbox-about-left {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.textbox-about-right {
+    font-size: 25px;
+    max-width: 400px;
+    font-family: "Indie Flower", cursive;
+}
+
+.quant-pdt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: whitesmoke;
+    }
+
+}
