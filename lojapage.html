@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Indie+Flower&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/loja.css">
+    <link rel="stylesheet" href="../css/ids.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <title>Loja - Catálogo simples</title>
+</head>
+
+<body id="main">
+
+    <nav>
+
+        <!--<img src="../img/Logo CStore em azul vibrante.png" alt="Imagem inexistente">-->
+
+        <span id="logo-main">CStore</span>
+
+        <ul>
+            <li><a href="#main" style="text-decoration: none; color: black;">Todos os produtos</a></li>
+            <li>Categoria</li>
+            <li><a href="#aboutus" style="text-decoration: none; color: black;">Sobre nós</a></li>
+        </ul>
+
+        <div class="search-nav-store" id="search">
+
+            <label for="search-store">
+                <i class="bi bi-search"></i>
+            </label>
+
+            <input type="search" name="" id="search-store" placeholder="Procure algo...">
+
+        </div>
+
+        <div class="icons-user-store">
+
+            <i class="bi bi-cart" title="Carrinho"></i>
+            <i class="bi bi-person" title="Conta" onclick="painel()"></i>
+            <i class="bi bi-telephone" title="Telefone" onclick="contact()"></i>
+
+        </div>
+
+    </nav>
+
+    <header>
+        <div class="produtos">
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="../img/d.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="">Quantidade: 1</option>
+                                <option value="">Quantidade: 2</option>
+                                <option value="">Quantidade: 3</option>
+                                <option value="">Quantidade: 4</option>
+                                <option value="">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/foto.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="">Quantidade: 1</option>
+                                <option value="">Quantidade: 2</option>
+                                <option value="">Quantidade: 3</option>
+                                <option value="">Quantidade: 4</option>
+                                <option value="">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/thumbfoto1.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="1">Quantidade: 1</option>
+                                <option value="2">Quantidade: 2</option>
+                                <option value="3">Quantidade: 3</option>
+                                <option value="4">Quantidade: 4</option>
+                                <option value="5">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/Logo minimalista CStore em azul.png" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="1">Quantidade: 1</option>
+                                <option value="2">Quantidade: 2</option>
+                                <option value="3">Quantidade: 3</option>
+                                <option value="4">Quantidade: 4</option>
+                                <option value="5">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/d.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="">Quantidade: 1</option>
+                                <option value="">Quantidade: 2</option>
+                                <option value="">Quantidade: 3</option>
+                                <option value="">Quantidade: 4</option>
+                                <option value="">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/foto.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="">Quantidade: 1</option>
+                                <option value="">Quantidade: 2</option>
+                                <option value="">Quantidade: 3</option>
+                                <option value="">Quantidade: 4</option>
+                                <option value="">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/thumbfoto1.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="1">Quantidade: 1</option>
+                                <option value="2">Quantidade: 2</option>
+                                <option value="3">Quantidade: 3</option>
+                                <option value="4">Quantidade: 4</option>
+                                <option value="5">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/Logo minimalista CStore em azul.png" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <span><b>Carregador 30W</b></span>
+
+                        <p id="descricao-loja">Carregador USB Tipo-C 30W de potência da Samsung.</p>
+
+                        <span><b>R$99,00</b></span>
+
+                        <div class="quant-pdt">
+
+                            <select name="" id="">
+                                <option value="1">Quantidade: 1</option>
+                                <option value="2">Quantidade: 2</option>
+                                <option value="3">Quantidade: 3</option>
+                                <option value="4">Quantidade: 4</option>
+                                <option value="5">Quantidade: 5</option>
+                            </select>
+
+                            <div class="buy-button">
+                                <span>Comprar</span>
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sobrenos" id="aboutus">
+
+        <div class="textbox-about-left">
+            CStore
+        </div>
+        <div class="textbox-about-right">
+            Somos uma microempresa no ramo de eletônicos e diversos. Desde <b>Carregadores celulares</b> até capinhas de
+            telefones.
+        </div>
+    </div>
+</body>
+
+<script>
+
+    function contact() {
+
+        resp = confirm("Você será redirecionado ao whatsapp")
+
+        if (resp === true) {
+
+            location.href = "https://api.whatsapp.com/send?=phone/5585988671941"
+        }
+    }
+
+    function painel() {
+
+        var senha = prompt("Senha")
+
+        if (senha === "a") {
+
+            location.href = "../html/painel.html"
+
+        } else {
+
+            alert("Senha incorreta!")
+        }
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/ids.css">
+    <link rel="stylesheet" href="../css/admlogin.css">
+
+    <title>Entrar - entre na sua conta como administrador</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <img src="../img/undraw_deep-thinker-avatar_6xg6.svg" alt="">
+        <h1>Administrador</h1>
+
+        <div class="input-box">
+            <!--<label for="password">Senha</label>-->
+
+            <div class="password">
+
+                <input type="password" id="password" placeholder="Código de acesso">
+
+
+                <i class="bi bi-eye-fill" id="show-pwd" onclick="showpassword()"></i>
+
+            </div>
+
+            <div id="error"></div>
+        </div>
+
+        <button id="login-button" onclick="login(); return false">Entrar</button>
+
+        <span>Não tem conta? <a href="">Crie uma</a></span>
+
+    </form>
+</body>
+
+<script src="../javascript/mask.js"></script>
+<script>
+
+    function login() {
+
+        senha = document.getElementById("password").value
+
+        if (senha == "123" || senha == "aaabbbccc") {
+
+            location.href = "../html/painel.html"
+
+        } else {
+            error = document.getElementById("error").innerHTML = "Senha incorreta!"
+        }
+    }
+
+</script>
+
+</html>
