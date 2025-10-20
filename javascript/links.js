@@ -1,6 +1,7 @@
 function loja() {
 
-    window.open('../html/lojapage.html', '_blank');
+    window.open('lojapage.html', '_blank');
+
 
 
 }
