@@ -33,8 +33,8 @@ header {
 /* Barra de navegação */
 
 .nav-panel {
-    padding: 5px;
-    margin: 10px 5px;
+    padding: 10px;
+    margin: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,4 +294,5 @@ i {
         background-color: #c9c9c9;
     }
 }
+
 
