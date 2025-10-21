@@ -12,6 +12,18 @@
         margin: 1rem;
     }
 
+    .cards-dash{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .card-dash{
+            width: 150px;
+            margin: 10px;
+        }
+    }
+
     .cards {
         display: flex;
         flex-wrap: wrap;
