@@ -192,7 +192,6 @@ label {
         input {
             margin: 5px 0px;
             padding: 15px;
-            width: 400px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
@@ -227,7 +226,6 @@ label {
         input {
             margin: 5px 0px;
             padding: 15px;
-            width: 400px;
             border-radius: 5px;
             border: 1px solid #ccc;
             background-color: white;
@@ -274,7 +272,11 @@ label {
             padding: 15px;
             width: 100%;
             outline: none;
+            background-color: transparent;
+
+        &:focus{
             background-color: white;
+        }
         }
 
     }

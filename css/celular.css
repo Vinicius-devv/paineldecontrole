@@ -9,21 +9,22 @@
         padding: 10px;
         margin: 20px 0px;
     }
-    
+
     header {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         margin: 1rem;
     }
 
-    .cards-dash{
+    .cards-dash {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
-        .card-dash{
+        .card-dash {
             width: 150px;
             margin: 10px;
         }
@@ -38,7 +39,7 @@
             display: flex;
             border: 1px solid #ccc;
             border-radius: 0px 0px 10px 10px;
-            width: 400px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             margin: 15px 5px;
@@ -114,6 +115,4 @@
     }
 
 
-
 }
-
