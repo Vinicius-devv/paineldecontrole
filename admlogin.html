@@ -28,6 +28,7 @@
     <form action="">
 
         <img src="img/undraw_deep-thinker-avatar_6xg6.svg" alt="">
+
         <h1>Administrador</h1>
 
         <div class="input-box">
@@ -36,7 +37,6 @@
             <div class="password">
 
                 <input type="password" id="password" placeholder="Código de acesso">
-
 
                 <i class="bi bi-eye-fill" id="show-pwd" onclick="showpassword()"></i>
 
@@ -61,7 +61,7 @@
 
         if (senha == "123" || senha == "aaabbbccc") {
 
-            location.href = "html/painel.html"
+            location.href = "index.html"
 
         } else {
             error = document.getElementById("error").innerHTML = "Senha incorreta!"
@@ -69,6 +69,5 @@
     }
 
 </script>
-
 
 </html>

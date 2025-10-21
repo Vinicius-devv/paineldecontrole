@@ -1,86 +1,84 @@
 @media screen and (max-width: 414px) {
-    
-    nav{
+
+    .search-nav {
+        width: 100%;
         display: flex;
-        justify-content: space-around;
     }
-    nav i{
-        padding: 10px;
-        border-radius: 50px;
-        color: white;
-        background-color: #0866FF;
-    }
-    header{
+
+    header {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin: 1rem;
     }
 
-    .cards{
+    .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0rem 0rem;
+
+        .card {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 0px 0px 10px 10px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            margin: 15px 5px;
+
+            &:hover {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            button {
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .textbox {
+                margin: 5px 10px;
+                height: 0px;
+            }
+
+            .textbox p {
+                margin: 10px 0px;
+                overflow-y: scroll;
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+                margin: 10px 0px;
+            }
+
+            .editar {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                cursor: pointer;
+            }
+
+            .editar:hover {
+                background-color: #c9c9c9;
+            }
+        }
+
     }
-    .card{
-        display: flex;
-        border: 1px solid #ccc;
-        border-radius: 0px 0px 10px 10px;
-        width: 300px;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        margin: 15px 5px;
-    }
-    
-    .card:hover{
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        
-    }
-    .card button{
-        align-items: center;
-    }
-    .card h1{
-        font-size: 20px;
-    }
-    .textbox{
-        margin: 5px 10px;
-        height: 0px;
-    }
-    .textbox p{
-        margin: 10px 0px;
-    }
-    #descricao{
-        height: 50px;
-        padding: 5px 0px;
-        overflow-y: scroll;
-    }
-    .button{
-        display: flex;
-        justify-content: center;
-        margin: 10px 0px;
-    }
-    .editar{
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        cursor: pointer;
-    }
-    .editar:hover{
-        background-color: #c9c9c9;
-    }
-    
+
     /*Menu mobile*/
 
-    
+
     /*Menu lateral*/
 
-    .esquerda.abrir{
-        display: flex;
+    .esquerda.abrir {
+        display: none;
     }
-    .esquerda{
+
+    .esquerda {
         float: none;
         display: none;
         flex-direction: column;
@@ -89,12 +87,14 @@
         height: 100%;
         background-color: whitesmoke;
     }
-    #fechar{
-        display: flex;
-    }
-    #menu-mobile-icon{
+
+    #fechar {
         display: flex;
     }
 
-    
+    #menu-mobile-icon {
+        display: flex;
+    }
+
+
 }

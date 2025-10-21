@@ -1,4 +1,4 @@
-body{
+body {
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -9,7 +9,8 @@ body{
     background-size: 100%;
     backdrop-filter: blur(50px);
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,49 +20,135 @@ form{
     text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.input-box, label{
+
+.input-box,
+label {
     display: flex;
     flex-direction: column;
     text-align: start;
     margin: 5px 0px;
 }
-.input-box input{
+
+.input-box input {
     width: 350px;
-    border-top:0px;
-    border-right:0px;
-    border-left:0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
     border-bottom: 1px solid #ccc;
     padding: 10px;
     outline: none;
 }
-.input-box input:focus{
+
+.input-box input:focus {
     border-color: #0866FF;
     transition: .3s;
 }
-.input-box i{
+
+.input-box i {
     cursor: pointer;
 }
-.button{
+
+.button {
     background-color: whitesmoke;
 }
-img{
+
+img {
     width: 100px;
     margin: 10px;
     border-radius: 100%;
 }
-img:hover{
-transform: scale(1.05) rotate(5deg);
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+img:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-#error{
+
+#error {
     font-size: 12px;
     padding: 5px 0px;
     color: red;
 }
-span{
+
+span {
     margin: 10px 0px;
     font-size: 12px;
 }
-a{
+
+a {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    body{
+        background-color: #F2F2F2;
+        background-image: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .input-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        input {
+            width: 250px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 1px solid #ccc;
+            background-color: transparent;
+            padding: 15px;
+            outline: none;
+            
+            &:focus {
+                border-color: #0866FF;
+                transition: .3s;
+            }
+        }
+        
+        i {
+            cursor: pointer;
+        }
+    }
+
+    .button {
+        background-color: whitesmoke;
+    }
+
+    img {
+        width: 150px;
+        margin-bottom: 20px;
+        border-radius: 100%;
+        
+        &:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    }
+
+
+    #error {
+        font-size: 12px;
+        padding: 5px 0px;
+        color: red;
+    }
+
+    span {
+        margin: 10px 0px;
+        font-size: 12px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
 }

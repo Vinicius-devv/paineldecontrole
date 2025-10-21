@@ -1,16 +1,19 @@
-*{
+* {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0px;
     transition: .1s;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-input{
+
+input {
     padding: 5px;
 }
-#submit{
+
+#submit {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -20,10 +23,12 @@ input{
     background-color: #0866FF;
     color: white;
 }
-#submit:hover{
+
+#submit:hover {
     background-color: #0057e4;
 }
-#edit-save{
+
+#edit-save {
     width: 200px;
     padding: 10px;
     border-radius: 5px;
@@ -33,10 +38,12 @@ input{
     background-color: #0866FF;
     color: white;
 }
-#edit-save:hover{
+
+#edit-save:hover {
     background-color: #0057e4;
 }
-#login-button{
+
+#login-button {
     width: 200px;
     padding: 10px;
     border-radius: 5px;
@@ -46,22 +53,26 @@ input{
     background-color: #0866FF;
     color: white;
 }
-#login-button:hover{
+
+#login-button:hover {
     background-color: #0057e4;
 }
 
-button{
+button {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: #c9c9c9;
 }
-li{
+
+li {
     list-style: none;
 }
-i{
+
+i {
     cursor: pointer;
 }
