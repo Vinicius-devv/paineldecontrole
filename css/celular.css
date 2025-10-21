@@ -5,6 +5,11 @@
         display: flex;
     }
 
+    .nav-panel {
+        padding: 10px;
+        margin: 20px 0px;
+    }
+    
     header {
         display: flex;
         justify-content: center;
@@ -107,6 +112,7 @@
     #menu-mobile-icon {
         display: flex;
     }
+
 
 
 }
