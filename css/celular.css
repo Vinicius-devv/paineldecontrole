@@ -2,6 +2,7 @@
 
     body{
         height: 100dvh;
+        margin: 2rem 0rem;
     }
     .search-nav {
         display: none;
