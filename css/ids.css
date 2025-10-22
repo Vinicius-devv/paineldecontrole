@@ -6,6 +6,17 @@
         background-color: black;
     }
 }
+#button {
+    background-color: whitesmoke;
+    color: black;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #ccc;
+    }
+}
 
 #descricao-painel {
     height: 90px;

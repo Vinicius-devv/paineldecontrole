@@ -46,7 +46,7 @@
 
     </div>
 
-    <header>
+    <main>
 
         <!--Dashboard-->
         <div class="dashboard" id="dashboard">
@@ -63,9 +63,11 @@
 
                 <div class="btn-dash-nav">
 
-                    <button onclick="calc()">Relatar problema</button>
+                    <a href="app-release.apk" download id="button">
+                        <i class="bi bi-download"></i>Baixe o app
+                    </a>
+
                     <button id="new-prod-dash" onclick="newprod()">Novo produto</button>
-                    <a href="app-release.apk" download>Baixe o app</a>
 
                 </div>
             </div>
@@ -207,12 +209,66 @@
                     </div>
 
                 </div>
+                <div class="card">
+                    <img src="img/d.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="img/undraw_deep-thinker-avatar_6xg6.svg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="img/foto.jpg" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    </header>
+    </main>
 
     <!--Painel lateral esquerdo-->
     <aside class="esquerda">
@@ -270,6 +326,21 @@
     </aside>
 
     <div class="mobile-menu">
+
+        <ul>
+            <li onclick="index()">
+                <i class="bi bi-house"></i>
+            </li>
+            <li onclick="loja()">
+            <i class="bi bi-bag-dash"></i>
+            </li>
+            <li onclick="cog()">
+                <i class="bi bi-gear"></i>
+            </li>
+            <li onclick="login()">
+                <i class="bi bi-box-arrow-right"></i>
+            </li>
+        </ul>
     </div>
 
     <!--Modais-->

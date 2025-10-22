@@ -18,6 +18,9 @@ body {
     display: flex;
     justify-content: center;
 }
+.mobile-menu{
+    display: none;
+}
 
 nav input {
     width: 600px;
@@ -26,7 +29,7 @@ nav input {
     border-radius: 5px;
 }
 
-header {
+main {
     display: flex;
     flex-direction: column;
     margin: 1rem 20rem;
