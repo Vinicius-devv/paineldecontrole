@@ -27,10 +27,6 @@
 
 <body>
 
-
-    <div class="ajuda">
-        Ajuda
-    </div>
     <div class="nav-panel" id="search">
 
         <div class="search-nav" id="search-nav">
@@ -63,7 +59,7 @@
 
                 <div class="btn-dash-nav">
 
-                    <a href="app-release.apk" download id="button" id="b-apk">
+                    <a href="app-release.apk" download id="button" id="b-apk" style="display: none;">
                         <i class="bi bi-download"></i>Baixe o app
                     </a>
 
@@ -137,10 +133,10 @@
 
             </div>
 
-            <div class="data-users">
+            <div class="data-users" style="display: none;">
 
                 <ul>
-                    <li><i class="bi bi-envelope"></i> email@email.com</li>
+                    <li><i class="bi bi-envelope"></i> x@x.net</li>
                     <li><i class="bi bi-telephone"></i>(99)99999-9999</li>
                     <li></li>
                 </ul>
@@ -159,14 +155,14 @@
 
                     <div class="textbox">
 
-                        <h1>Caixa de Som</h1>
+                        <h1>Carregador 33W</h1>
 
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+                        <p id="descricao-painel">Carregador 33W de potência</p>
 
-                        <span id="preco"><b>R$99,00</b></span>
+                        <span id="preco"><b>R$20,00</b></span>
 
                         <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
+                            <button class="editar" onclick="buy()">Adicionar</button>
                         </div>
 
                     </div>
@@ -181,10 +177,10 @@
 
                         <p id="descricao-painel">Caixa de som bluetooth à prova d'água com 12h de duração.</p>
 
-                        <span id="preco"><b>R$99,00</b></span>
+                        <span id="preco"><b>R$80,00</b></span>
 
                         <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
+                            <button class="editar" onclick="buy()">Adicionar</button>
                         </div>
 
                     </div>
@@ -197,66 +193,66 @@
 
                         <h1>Caixa de Som</h1>
 
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+                        <p id="descricao-painel">Headset sem fio com 8h de duração</p>
 
-                        <span id="preco"><b>R$99,00</b></span>
+                        <span id="preco"><b>R$50,00</b></span>
 
                         <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
+                            <button class="editar" onclick="buy()">Adicionar</button>
                         </div>
 
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="img/carregador.png" alt="Nada aqui?">
+                    <img src="img/Fones-De-Ouvido-Xiaomi-Redmi-Airdots-2.jpg" alt="Nada aqui?">
 
                     <div class="textbox">
 
-                        <h1>Caixa de Som</h1>
+                        <h1>Fones de ouvido Airdots</h1>
 
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+                        <p id="descricao-painel">Fones De Ouvido Xiaomi Redmi Airdots 2</p>
 
-                        <span id="preco"><b>R$99,00</b></span>
+                        <span id="preco"><b>R$50,00</b></span>
 
                         <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
+                            <button class="editar" onclick="buy()">Adicionar</button>
                         </div>
 
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="img/ciaxadesom.png" alt="Nada aqui?">
+                    <img src="img/garrafa-termica-goldentec-750ml-preta-base-emborrachada-preto.jpg" alt="Nada aqui?">
 
                     <div class="textbox">
 
-                        <h1>Caixa de Som JBL</h1>
+                        <h1>garrafa termica</h1>
 
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água com 12h de duração.</p>
+                        <p id="descricao-painel">Garrafa de água térmica com base emborrachada</p>
 
-                        <span id="preco"><b>R$99,00</b></span>
+                        <span id="preco"><b>R$80,00</b></span>
 
                         <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
+                            <button class="editar" onclick="buy()">Adicionar</button>
                         </div>
 
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="img/headset.png" alt="Nada aqui?">
+                    <img src="img/pilhas.png" alt="Nada aqui?">
 
                     <div class="textbox">
 
-                        <h1>Caixa de Som</h1>
+                        <h1>Kit Pilhas palito</h1>
 
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+                        <p id="descricao-painel">Kit com 4 pilhas palitos (UN.: R$3,00)</p>
 
-                        <span id="preco"><b>R$99,00</b></span>
+                        <span id="preco"><b>R$12,00</b></span>
 
                         <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
+                            <button class="editar" onclick="buy()">Adicionar</button>
                         </div>
 
                     </div>
@@ -279,8 +275,8 @@
                 <img src="img/foto.jpg" alt="Sem foto">
 
                 <div class="ifos-adm">
-                    <span class="amdname">Adm Name</span>
-                    <span id="emailadm">aaabbbccc</span>
+                    <span class="amdname">Administrador</span>
+                    <span id="emailadm">x@x.net</span>
                 </div>
             </div>
             <div class="painelcontrol">
@@ -317,6 +313,7 @@
 
     </aside>
 
+    <!--Menu Mobile-->
     <div class="mobile-menu">
 
         <ul>

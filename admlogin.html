@@ -25,31 +25,58 @@
 
 <body>
 
-    <form action="">
+    <div class="img">
 
-        <img src="img/undraw_deep-thinker-avatar_6xg6.svg" alt="">
+        <img src="img/undraw_maintenance_4unj.svg" alt="">
+        
+    </div>
 
-        <h1>Administrador</h1>
 
-        <div class="input-box">
-            <!--<label for="password">Senha</label>-->
+    <div class="form">
 
-            <div class="password">
+        <div class="form-div">
 
-                <input type="password" id="password" placeholder="Código de acesso">
+            <h1>Bem-vindo de Volta!</h1>
+            <span>Como deseja entrar?</span>
 
-                <i class="bi bi-eye-fill" id="show-pwd" onclick="showpassword()"></i>
+            <form action="">
 
-            </div>
+                <label for="email">Email</label>
+                <div class="input-box">
 
-            <div id="error"></div>
+                    <div class="email">
+
+                        <input type="email" id="email" placeholder="Email@email.com" maxlength="36">
+
+                    </div>
+
+                </div>
+
+                <label for="password">Senha</label>
+                <div class="input-box">
+
+                    <div class="password">
+
+                        <input type="password" id="password" placeholder="Código de acesso" maxlength="12">
+
+                        <i class="bi bi-eye-fill" id="show-pwd" onclick="showpassword()"></i>
+
+                    </div>
+
+                </div>
+                <div id="error" style="text-align: start;"></div>
+
+                <button id="login-button" onclick="login(); return false">Entrar</button>
+
+                <span style="display: none;">Não tem conta? <a href="">Crie uma</a></span>
+
+            </form>
+
         </div>
 
-        <button id="login-button" onclick="login(); return false">Entrar</button>
 
-        <span>Não tem conta? <a href="">Crie uma</a></span>
+    </div>
 
-    </form>
 </body>
 
 <script src="javascript/mask.js"></script>
@@ -57,14 +84,17 @@
 
     function login() {
 
+        email = document.getElementById("email").value
         senha = document.getElementById("password").value
 
-        if (senha == "123" || senha == "aaabbbccc") {
+        if (email == "x@x.net" && senha == "123" || email == "xx" & senha == "123") {
 
             location.href = "index.html"
 
         } else {
-            error = document.getElementById("error").innerHTML = "Senha incorreta!"
+
+            error = document.getElementById("error").innerHTML = "Email ou Senha incorreta!"
+
         }
     }
 
