@@ -1,6 +1,10 @@
 @media screen and (max-width: 600px) {
 
+    body{
+        height: 100dvh;
+    }
     .search-nav {
+        display: none;
         width: 100%;
         display: flex;
     }
@@ -10,7 +14,7 @@
         margin: 20px 0px;
     }
 
-    .btn-dash-nav a{
+    .btn-dash-nav a {
         display: block;
     }
 
@@ -28,39 +32,50 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
 
             .card {
                 display: flex;
                 border: 1px solid #ccc;
-                width: 100%;
-                margin: 15px 5px;
+                border-radius: 10px;
+                width: 40%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin: 10px 5px;
 
                 &:hover {
                     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 }
 
-                img{
-                    display: flex;
-                }
-
-                h1 {
-                    font-size: 20px;
-                }
-
-                span{
-                    display: flex;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 10px;
                 }
 
                 .textbox {
+                    
+                    display: none;
                     margin: 5px 10px;
                     height: 0px;
+
+                    h1 {
+                        font-size: 20px;
+                    }
+
+                    span {
+                        display: flex;
+                    }
+
+                    p {
+                        margin: 10px 0px;
+                        overflow-y: scroll;
+                        display: flex;
+                    }
                 }
 
-                .textbox p {
-                    margin: 10px 0px;
-                    overflow-y: scroll;
-                    display: flex;
-                }
 
                 .button {
                     display: flex;
@@ -80,74 +95,74 @@
                 }
 
             }
-
         }
-    }
 
-    .mobile-menu {
+
+    }
+}
+
+.mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    ul {
         display: flex;
         justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
+        background-color: #f0f0f0;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 10px;
 
-        ul {
-            display: flex;
-            justify-content: center;
-            background-color: #f0f0f0;
-            width: 100%;
-            border: 1px solid white;
-            border-radius: 10px;
-
-            li {
-                margin: 15px;
-                padding: 10px;
-            }
+        li {
+            margin: 15px;
+            padding: 10px;
         }
     }
+}
 
-    .cards-dash {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+.cards-dash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-        .card-dash {
-            width: 150px;
-            margin: 10px;
-        }
+    .card-dash {
+        width: 150px;
+        margin: 10px;
     }
+}
 
 
 
-    /*Menu mobile*/
+/*Menu mobile*/
 
 
-    /*Menu lateral*/
+/*Menu lateral*/
 
-    .esquerda.abrir {
-        display: none;
-    }
+.esquerda.abrir {
+    display: none;
+}
 
-    .esquerda {
-        float: none;
-        display: none;
-        flex-direction: column;
-        width: 70%;
-        padding: 30px;
-        height: 100%;
-        background-color: whitesmoke;
-    }
+.esquerda {
+    float: none;
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    padding: 30px;
+    height: 100%;
+    background-color: whitesmoke;
+}
 
-    #fechar {
-        display: flex;
-    }
+#fechar {
+    display: flex;
+}
 
-    #menu-mobile-icon {
-        display: flex;
-    }
-
+#menu-mobile-icon {
+    display: flex;
 }
