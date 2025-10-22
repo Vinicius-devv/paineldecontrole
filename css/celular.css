@@ -1,9 +1,5 @@
 @media screen and (max-width: 600px) {
 
-    body{
-        height: 100dvh;
-        margin: 2rem 0rem;
-    }
     .search-nav {
         display: none;
         width: 100%;
@@ -57,7 +53,7 @@
                 }
 
                 .textbox {
-                    
+
                     display: none;
                     margin: 5px 10px;
                     height: 0px;
@@ -100,70 +96,70 @@
 
 
     }
-}
 
-.mobile-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-
-    ul {
+    .mobile-menu {
         display: flex;
         justify-content: center;
-        background-color: #f0f0f0;
-        width: 100%;
-        border: 1px solid white;
-        border-radius: 10px;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
 
-        li {
-            margin: 15px;
-            padding: 10px;
+        ul {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 10px;
+
+            li {
+                margin: 15px;
+                padding: 10px;
+            }
         }
     }
-}
 
-.cards-dash {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    .cards-dash {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
 
-    .card-dash {
-        width: 150px;
-        margin: 10px;
+        .card-dash {
+            width: 150px;
+            margin: 10px;
+        }
     }
-}
 
 
 
-/*Menu mobile*/
+    /*Menu mobile*/
 
 
-/*Menu lateral*/
+    /*Menu lateral*/
 
-.esquerda.abrir {
-    display: none;
-}
+    .esquerda.abrir {
+        display: none;
+    }
 
-.esquerda {
-    float: none;
-    display: none;
-    flex-direction: column;
-    width: 70%;
-    padding: 30px;
-    height: 100%;
-    background-color: whitesmoke;
-}
+    .esquerda {
+        float: none;
+        display: none;
+        flex-direction: column;
+        width: 70%;
+        padding: 30px;
+        height: 100%;
+        background-color: whitesmoke;
+    }
 
-#fechar {
-    display: flex;
-}
+    #fechar {
+        display: flex;
+    }
 
-#menu-mobile-icon {
-    display: flex;
+    #menu-mobile-icon {
+        display: flex;
+    }
 }
