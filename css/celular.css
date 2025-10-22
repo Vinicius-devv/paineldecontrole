@@ -10,6 +10,9 @@
         margin: 20px 0px;
     }
 
+    .btn-dash-nav a{
+        display: block;
+    }
 
     main {
         display: flex;

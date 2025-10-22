@@ -33,7 +33,7 @@
     </div>
     <div class="nav-panel" id="search">
 
-        <div class="search-nav">
+        <div class="search-nav" id="search-nav">
 
             <label for="search-painel">
                 <i class="bi bi-search"></i>
@@ -63,7 +63,7 @@
 
                 <div class="btn-dash-nav">
 
-                    <a href="app-release.apk" download id="button">
+                    <a href="app-release.apk" download id="button" id="b-apk">
                         <i class="bi bi-download"></i>Baixe o app
                     </a>
 
@@ -156,7 +156,7 @@
 
 
                 <div class="card">
-                    <img src="img/d.jpg" alt="Nada aqui?">
+                    <img src="img/carregador.png" alt="Nada aqui?">
 
                     <div class="textbox">
 
@@ -174,7 +174,25 @@
 
                 </div>
                 <div class="card">
-                    <img src="img/undraw_deep-thinker-avatar_6xg6.svg" alt="Nada aqui?">
+                    <img src="img/ciaxadesom.png" alt="Nada aqui?">
+
+                    <div class="textbox">
+
+                        <h1>Caixa de Som JBL</h1>
+
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água com 12h de duração.</p>
+
+                        <span id="preco"><b>R$99,00</b></span>
+
+                        <div class="button">
+                            <button class="editar" onclick="editarmodal()">Editar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="img/headset.png" alt="Nada aqui?">
 
                     <div class="textbox">
 
@@ -192,7 +210,7 @@
 
                 </div>
                 <div class="card">
-                    <img src="img/foto.jpg" alt="Nada aqui?">
+                    <img src="img/carregador.png" alt="Nada aqui?">
 
                     <div class="textbox">
 
@@ -210,13 +228,13 @@
 
                 </div>
                 <div class="card">
-                    <img src="img/d.jpg" alt="Nada aqui?">
+                    <img src="img/ciaxadesom.png" alt="Nada aqui?">
 
                     <div class="textbox">
 
-                        <h1>Caixa de Som</h1>
+                        <h1>Caixa de Som JBL</h1>
 
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
+                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água com 12h de duração.</p>
 
                         <span id="preco"><b>R$99,00</b></span>
 
@@ -228,25 +246,7 @@
 
                 </div>
                 <div class="card">
-                    <img src="img/undraw_deep-thinker-avatar_6xg6.svg" alt="Nada aqui?">
-
-                    <div class="textbox">
-
-                        <h1>Caixa de Som</h1>
-
-                        <p id="descricao-painel">Caixa de som bluetooth à prova d'água</p>
-
-                        <span id="preco"><b>R$99,00</b></span>
-
-                        <div class="button">
-                            <button class="editar" onclick="editarmodal()">Editar</button>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="img/foto.jpg" alt="Nada aqui?">
+                    <img src="img/headset.png" alt="Nada aqui?">
 
                     <div class="textbox">
 
@@ -286,17 +286,10 @@
             </div>
             <div class="painelcontrol">
 
-
                 <ul class="tabs">
 
-                    <a href="#dashboard" id="left-bar">
+                    <a href="#search-nav" id="left-bar">
                         <li id="dashboard"><i class="bi bi-pie-chart"></i>Dashboard</li>
-                    </a>
-
-                    <a href="#prods" id="left-bar">
-                        <li id="produtos">
-                            <i class="bi bi-box-seam"></i>Produtos
-                        </li>
                     </a>
 
                     <li onclick="loja()"><i class="bi bi-bag-heart"></i>Loja</li>
@@ -332,7 +325,7 @@
                 <i class="bi bi-house"></i>
             </li>
             <li onclick="loja()">
-            <i class="bi bi-bag-dash"></i>
+                <i class="bi bi-bag-dash"></i>
             </li>
             <li onclick="cog()">
                 <i class="bi bi-gear"></i>
@@ -406,7 +399,7 @@
                 <div class="content-check">
 
                     <div class="title-check">
-                        <label for="1">Permitir que usuários cadastrem produtos</label>
+                        <label for="1">Permitir que funcionários cadastrem produtos</label>
                     </div>
 
                     <div class="input-check">
