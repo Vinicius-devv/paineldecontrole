@@ -22,7 +22,6 @@
 
     .nav-panel {
         padding: 10px;
-        margin: 20px 0px;
     }
 
     .btn-dash-nav a {
@@ -146,6 +145,8 @@
 
                 &:hover {
                     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    z-index: 1;
+                    transform: scale(1.02);
                 }
 
                 img {

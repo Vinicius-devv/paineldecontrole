@@ -38,7 +38,23 @@ function cog() {
 
     modal.addEventListener('clicker', (e) => {
 
-        if (e.target.id == "edit-save") {
+        if (e.target.id == "login-button") {
+
+            enviar.classList.remove('abrir')
+
+        }
+    })
+}
+
+function register() {
+
+    const enviar = document.getElementById("register-modal")
+
+    enviar.classList.add('abrir')
+
+    modal.addEventListener('clicker', (e) => {
+
+        if (e.target.id == "submit") {
 
             enviar.classList.remove('abrir')
 

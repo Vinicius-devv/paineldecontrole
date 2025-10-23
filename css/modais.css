@@ -15,29 +15,30 @@
     bottom: 0;
     background-color: whitesmoke;
     z-index: 998;
-}
 
-.modal-prod form {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    width: 600px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: white;
-}
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        width: 600px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        background-color: white;
+    }
 
-.modal-prod input {
-    margin: 5px 0px;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    input {
+        margin: 5px 0px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
 }
 
 #submit {
     width: 50%;
 }
+
 
 /* Modal edit */
 
@@ -57,26 +58,27 @@
     bottom: 0;
     background-color: whitesmoke;
     z-index: 998;
-}
 
-.editar-modal {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-    padding: 50px;
-
-    input {
-        padding: 10px;
-        margin: 5px;
-        width: 100%;
-        border-radius: 5px;
+    .editar-modal {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
         border: 1px solid #ccc;
-        background-color: whitesmoke;
+        border-radius: 5px;
+        background-color: white;
+        padding: 50px;
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: whitesmoke;
+        }
     }
 }
+
 
 /* Preferencias/cog */
 
@@ -97,79 +99,227 @@
     z-index: 998;
     background-color: whitesmoke;
 
+    .panel-cog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 80px;
+        width: 50%;
+        background-color: white;
+    
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        input {
+            margin: 10px 0px;
+            width: 100%;
+            outline: none;
+        }
+    
+        .infos-cog-user {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0px;
+        
+            input {
+                outline: none;
+                border: none;
+                border-left: 1px solid #ccc;
+                border-bottom: 1px solid white;
+        
+                &:focus {
+                    border-color: #0866FF;
+                    border-bottom: 1px solid #0866FF;
+                    background-color: white;
+                }
+            }
+        
+            
+        }
+    }
+    
+    .checkbox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0px;
+        border: 1px solid #ccc;
+    }
+    
+    .content-check {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px;
+    }
+    
+    .title-check {
+        width: 80%;
+    }
+    
+    .input-check input,
+    label {
+        cursor: pointer;
+        width: 100px;
+    }
 }
 
-.panel-cog {
+
+/* Registrar */
+
+.register-modal.abrir {
     display: flex;
+}
+
+.register-modal {
+    display: none;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 80px;
-    width: 50%;
-    background-color: white;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
 
     form {
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        flex-direction: column;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        width: 400px;
 
-    input {
-        margin: 10px 0px;
-        width: 100%;
-        outline: none;
-    }
-}
+        #imagemInput {
+            display: none;
+        }
+
+        .photo-user {
+            margin: 10px 0px;
+
+            .upload-area {
+                width: 200px;
+                height: 200px;
+                margin: 1000px 0px;
+                border: 1px dashed #0866ff;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: #0866ff;
+                cursor: pointer;
+                transition: 0.3s;
+                margin: 0 auto;
+                background-color: #f8f8f8;
+
+                &:hover {
+                    background-color: #eef3ff;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    display: none;
+                    /* escondido até o usuário escolher uma imagem */
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        /* Área de upload (label que substitui o input) */
 
 
-.infos-cog-user {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0px;
+        input {
+            margin: 5px 0px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
 
-    input {
-        outline: none;
-        border: none;
-        border-left: 1px solid #ccc;
-        border-bottom: 1px solid white;
+        .input-box,
+        label {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            text-align: start;
+            margin: 5px 0px;
+        }
 
-        &:focus {
-            border-color: #0866FF;
-            border-bottom: 1px solid #0866FF;
-            background-color: white;
+        .input-box {
+            background-color: #E8F0FE;
+            width: 100%;
+            border-radius: 0px 12px 12px 12px;
+
+            input {
+                width: 92%;
+                height: auto;
+                border: none;
+                padding: 12px;
+                outline: none;
+
+                &:focus {
+                    border-color: #0866FF;
+                    transition: .3s;
+                }
+            }
+
+            i {
+                cursor: pointer;
+                color: black;
+
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+
+        #error {
+            font-size: 15px;
+            padding: 5px 0px;
+            color: #fff;
+            text-align: start;
+        }
+
+        #login-button {
+            border: none;
+            background-color: #7A96D6;
+
+            &:hover {
+                background-color: #0866FF;
+
+            }
+        }
+
+        span {
+            margin: 10px 0px;
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: underline;
         }
     }
+
 }
 
-
-
-.checkbox {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px 0px;
-    border: 1px solid #ccc;
-}
-
-.content-check {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px;
-}
-
-.title-check {
-    width: 80%;
-}
-
-.input-check input,
-label {
-    cursor: pointer;
-    width: 100px;
-}
 
 @media (max-width: 600px) {
 
@@ -325,6 +475,140 @@ label {
     label {
         cursor: pointer;
         width: 100px;
+    }
+
+    /*Register users*/
+
+    .register-modal {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+
+            #imagemInput {
+                display: none;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .photo-user {
+
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                .upload-area {
+                    width: 200px;
+                    height: 200px;
+                    margin: 0px 0px;
+                    border-radius: 12px;
+                    color: #0866ff;
+                    transition: 0.3s;
+                    background-color: #f8f8f8;
+
+                    &:hover {
+                        background-color: #eef3ff;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        display: none;
+                        /* escondido até o usuário escolher uma imagem */
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            /* Área de upload (label que substitui o input) */
+
+
+            input {
+                margin: 5px 0px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            .input-box,
+            label {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                text-align: start;
+                margin: 5px 0px;
+            }
+
+            .input-box {
+                background-color: #E8F0FE;
+                width: 100%;
+                border-radius: 0px 12px 12px 12px;
+
+                input {
+                    width: 90%;
+                    border: none;
+                    padding: 12px;
+                    outline: none;
+
+                    &:focus {
+                        border-color: #0866FF;
+                        transition: .3s;
+                    }
+                }
+
+                i {
+                    cursor: pointer;
+                    color: black;
+
+                }
+            }
+
+            button {
+                width: 100%;
+            }
+
+            #error {
+                font-size: 15px;
+                padding: 5px 0px;
+                color: #fff;
+                text-align: start;
+            }
+
+            #login-button {
+                border: none;
+                background-color: #7A96D6;
+
+                &:hover {
+                    background-color: #0866FF;
+
+                }
+            }
+
+            span {
+                margin: 10px 0px;
+                font-size: 12px;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
     }
 
 }

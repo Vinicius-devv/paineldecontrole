@@ -37,6 +37,8 @@
 
             <input type="search" name="" id="search-painel" placeholder="Procure algo...">
 
+            <i class=""> Buscar</i>
+
         </div>
 
 
@@ -290,7 +292,7 @@
                     <li onclick="loja()"><i class="bi bi-bag-heart"></i>Loja</li>
 
                     <li><i class="bi bi-envelope"></i>Mensagens</li>
-                    <li id="Cadastro"><i class="bi bi-person-add"></i>Cadastro</li>
+                    <li id="Cadastro" onclick="register()"><i class="bi bi-person-add"></i>Cadastro</li>
 
                     <li id="Clientes"><i class="bi bi-people"></i>Clientes</li>
 
@@ -366,6 +368,68 @@
 
         </form>
 
+    </div>
+
+    <!--MenuMobileList-->
+
+    <div class="MenuMobileList">
+    </div>
+
+    <!--Cadastro-->
+
+    <div class="register-modal" id="register-modal">
+
+        <form action="">
+
+            <h1>Cadastrar funcionário</h1>
+
+            <div class="photo-user">
+
+                <label for="imagemInput" class="upload-area" id="upload-area">
+                    
+                    <span>Selecione uma imagem</span>
+
+                    <img src="img/Avatar3DM.jpg" id="preview" alt="Pré-visualização">
+
+                </label>
+
+                <input type="file" id="imagemInput" accept="image/*">
+
+            </div>
+
+            <label for="email">Email</label>
+            <div class="input-box">
+
+                <div class="email">
+
+                    <input type="email" id="email" placeholder="Email@email.com" maxlength="36" required>
+
+                </div>
+
+            </div>
+
+            <label for="password">Senha</label>
+            <div class="input-box">
+
+                <div class="password">
+
+                    <input type="password" id="password" placeholder="Código de acesso" maxlength="12" required>
+
+                    <i class="bi bi-eye-fill" id="show-pwd" onclick="showpassword()"></i>
+
+                </div>
+
+            </div>
+
+            <div id="error" style="text-align: start;"></div>
+
+            <button id="login-button">Registrar e sair</button>
+
+            <!--<input type="reset" name="" id="">-->
+
+            <span style="display: none;">Não tem conta? <a href="">Crie uma</a></span>
+
+        </form>
     </div>
 
     <!--Preferencias-->
@@ -477,11 +541,33 @@
 
         </form>
     </div>
+
 </body>
 
 <script src="javascript/modais.js"></script>
 <script src="javascript/login.js"></script>
 <script src="javascript/links.js"></script>
 <script src="javascript/abas.js"></script>
+<script src="javascript/mask.js"></script>
+
+<script>
+    const input = document.getElementById('imagemInput');
+    const preview = document.getElementById('preview');
+    const uploadArea = document.getElementById('upload-area');
+
+    input.addEventListener('change', () => {
+        const file = input.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                preview.src = reader.result;
+                preview.style.display = 'block';        // mostra a imagem
+                uploadArea.querySelector('span').style.display = 'none'; // esconde o texto
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
 
 </html>
