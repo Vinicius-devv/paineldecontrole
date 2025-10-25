@@ -491,9 +491,9 @@
 
             <div class="infos-cog-user">
 
-                <input type="text" placeholder="Seu nome Ex.: Antônio">
-                <input type="text" placeholder="Nome da sua empresa">
-                <input type="text" placeholder="Seu número Ex.: (DDD) + 90000-0000">
+                <input type="text" placeholder="Seu nome" maxlength="16">
+                <input type="text" placeholder="Sua empresa" maxlength="26">
+                <input type="text" id="numero" placeholder="(00) 00000-0000" maxlength="15" inputmode="numeric">
 
             </div>
 
@@ -598,6 +598,8 @@
 <script src="javascript/abas.js"></script>
 <script src="javascript/mask.js"></script>
 
+
+<!--Aparecer imagem-->
 <script>
     const input = document.getElementById('imagemInput');
     const preview = document.getElementById('preview');
@@ -614,6 +616,27 @@
             };
             reader.readAsDataURL(file);
         }
+    });
+</script>
+
+<!--Mascara de número Tel-->
+<script>
+    const numero = document.getElementById('numero');
+
+    numero.addEventListener('input', (e) => {
+        let valor = e.target.value.replace(/\D/g, ''); // remove tudo que não for número
+
+        if (valor.length > 11) valor = valor.slice(0, 11); // limita a 11 dígitos
+
+        if (valor.length > 6) {
+            valor = valor.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3');
+        } else if (valor.length > 2) {
+            valor = valor.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+        } else {
+            valor = valor.replace(/^(\d*)/, '($1');
+        }
+
+        e.target.value = valor;
     });
 </script>
 

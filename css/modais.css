@@ -139,14 +139,12 @@
                     border-color: #0866FF;
                     border-bottom: 1px solid #0866FF;
                     background-color: #E8F0FE;
-                    border-radius: 0px 0px 0px 12px;
                 }
             }
         }
 
         textarea:focus {
             background-color: #E8F0FE;
-            border-radius: 0px 0px 0px 12px;
         }
 
         .checkbox {
@@ -408,7 +406,7 @@
     }
 
     .cog {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: flex-start;
         /* conteúdo começa no topo */
@@ -465,10 +463,16 @@
         /*Informações do Usuário*/
 
         .infos-cog-user {
-            display: grid;
-            grid-row: auto;
-            width: 100%;
-            padding: 0px;
+            .infos-cog-user {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* duas colunas */
+                grid-gap: 10px;
+                /* espaço entre os inputs */
+                width: 100%;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
             input {
                 outline: none;
