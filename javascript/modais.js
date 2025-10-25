@@ -61,3 +61,19 @@ function register() {
         }
     })
 }
+
+function menuList() {
+
+    const enviar = document.getElementById("MenuMobileList")
+
+    enviar.classList.add('abrir')
+
+    modal.addEventListener('clicker', (e) => {
+
+        if (e.target.id == "closeMenuList") {
+
+            enviar.classList.remove('abrir')
+
+        }
+    })
+}

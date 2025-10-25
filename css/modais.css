@@ -23,7 +23,6 @@
         width: 600px;
         border-radius: 10px;
         border: 1px solid #ccc;
-        background-color: white;
     }
 
     input {
@@ -107,68 +106,68 @@
         border: 1px solid #ccc;
         border-radius: 10px;
         padding: 80px;
-        width: 50%;
         background-color: white;
-    
+
         form {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-    
+
         input {
             margin: 10px 0px;
             width: 100%;
             outline: none;
         }
-    
+
         .infos-cog-user {
             display: flex;
             justify-content: center;
             width: 100%;
             padding: 0px;
-        
+
             input {
                 outline: none;
                 border: none;
                 border-left: 1px solid #ccc;
                 border-bottom: 1px solid white;
-        
+
                 &:focus {
                     border-color: #0866FF;
                     border-bottom: 1px solid #0866FF;
                     background-color: white;
                 }
             }
-        
-            
+
+
+        }
+
+        .checkbox {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 10px 0px;
+            border: 1px solid #ccc;
+        }
+
+        .content-check {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .title-check {
+            width: 80%;
+        }
+
+        .input-check input,
+        label {
+            cursor: pointer;
+            width: 100px;
         }
     }
-    
-    .checkbox {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 10px 0px;
-        border: 1px solid #ccc;
-    }
-    
-    .content-check {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 5px;
-    }
-    
-    .title-check {
-        width: 80%;
-    }
-    
-    .input-check input,
-    label {
-        cursor: pointer;
-        width: 100px;
-    }
+
 }
 
 
@@ -390,13 +389,10 @@
     }
 
     .cog {
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: whitesmoke;
-
-
     }
 
     .panel-cog {
@@ -405,77 +401,80 @@
         justify-content: center;
         align-items: center;
         border: none;
-        padding: 20px;
-        width: 100%;
         background-color: transparent;
 
         form {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+
+            input,
+            textarea {
+                margin: 10px 0px;
+                padding: 15px;
+                width: 100%;
+                outline: none;
+                background-color: transparent;
+
+                &:focus {
+                    background-color: white;
+                }
+            }
         }
 
-        input,
-        textarea {
+        /*Informações do Usuário*/
+
+        .infos-cog-user {
+
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0px;
+
+            input {
+                outline: none;
+                border: none;
+                border-left: 1px solid #ccc;
+                border-bottom: 1px solid white;
+
+                &:focus {
+                    border-color: #0866FF;
+                    border-bottom: 1px solid #0866FF;
+                }
+            }
+
+        }
+
+        /*Checkboxes*/
+
+        .checkbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
             margin: 10px 0px;
-            padding: 15px;
-            width: 100%;
-            outline: none;
-            background-color: transparent;
-
-            &:focus {
-                background-color: white;
-            }
-        }
-
-    }
-
-
-    .infos-cog-user {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 0px;
-
-        input {
-            outline: none;
             border: none;
-            border-left: 1px solid #ccc;
-            border-bottom: 1px solid white;
+        }
 
-            &:focus {
-                border-color: #0866FF;
-                border-bottom: 1px solid #0866FF;
-            }
+        .content-check {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5px 0px;
+        }
+
+        .title-check {
+            width: 100%;
+        }
+
+        .input-check input,
+        label {
+            cursor: pointer;
+            width: 100px;
         }
 
     }
 
-    .checkbox {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 10px 0px;
-        border: 1px solid #ccc;
-    }
-
-    .content-check {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 5px;
-    }
-
-    .title-check {
-        width: 80%;
-    }
-
-    .input-check input,
-    label {
-        cursor: pointer;
-        width: 100px;
-    }
 
     /*Register users*/
 

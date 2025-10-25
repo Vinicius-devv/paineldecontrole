@@ -315,6 +315,10 @@
 
     </aside>
 
+
+
+    <!--Mobile-->
+
     <!--Menu Mobile-->
     <div class="mobile-menu">
 
@@ -325,7 +329,7 @@
             <li onclick="loja()">
                 <i class="bi bi-bag-dash"></i>
             </li>
-            <li onclick="cog()">
+            <li onclick="menuList()">
                 <i class="bi bi-gear"></i>
             </li>
             <li onclick="login()" id="logout">
@@ -333,6 +337,55 @@
             </li>
         </ul>
     </div>
+
+    <!--MenuMobileList-->
+
+    <div class="MenuMobileList" id="MenuMobileList">
+
+        <!--<img src="img/Avatar3DM.jpg" alt="">-->
+
+        <ul class="menuList">
+
+            <li onclick="loja()">
+                <i class="bi bi-bag-heart"></i>
+                <span>Loja</span>
+            </li>
+
+            <li>
+                <i class="bi bi-envelope"></i>
+                <span>Mensagens</span>
+            </li>
+
+            <li id="Cadastro" onclick="register()">
+                <i class="bi bi-person-add"></i>
+                <span>Cadastro</span>
+            </li>
+
+            <li id="Clientes">
+                <i class="bi bi-people"></i>
+                <span>Clientes</span>
+            </li>
+
+            <li id="Cog" onclick="cog()">
+                <i class="bi bi-gear"></i>
+                <span>Preferências</span>
+            </li>
+
+            <li id="">
+                <i class="bi bi-info-lg"></i>
+                <span>ajuda</span>
+            </li>
+
+            <li id="closeMenuList">
+                <i class="las la-window-close" id="fechar-list"></i>
+                <span>Fechar</span>
+            </li>
+
+        </ul>
+
+    </div>
+
+
 
     <!--Modais-->
 
@@ -370,10 +423,6 @@
 
     </div>
 
-    <!--MenuMobileList-->
-
-    <div class="MenuMobileList">
-    </div>
 
     <!--Cadastro-->
 
@@ -386,7 +435,7 @@
             <div class="photo-user">
 
                 <label for="imagemInput" class="upload-area" id="upload-area">
-                    
+
                     <span>Selecione uma imagem</span>
 
                     <img src="img/Avatar3DM.jpg" id="preview" alt="Pré-visualização">
